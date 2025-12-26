@@ -92,13 +92,20 @@ body {
 
 .index-center h1 {
     font-size: 36px;
-    margin: 0;
 }
 
 .index-center p {
     font-size: 18px;
     margin: 0;
     max-width: 500px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.index-center p::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
 }
 
 #footer {
